@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo recuperativo</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+   
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .main{
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    
+    header{
+        background-color: white;
+        text-shadow: rgb(10, 10, 10) 5px ;
+        border: 1px black solid;
+        width: 100%;
+        height: 100px;
+        transition: 0.5s ;
+        padding: 0 30px;
+    }
+
+    .header_link{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        font-size: 50px;
+        color: #333333;
+
+    }
+    .header_img{
+        object-fit: cover;
+        height: 90%;
+        margin-right: 10px;
+       
+
+    }
+    body{
+        width: 100%;
+        background-color: white;
+        align-content: center;
+
+    }
+    nav ul li{
+        width: 70%;
+        height: 20px;
+        background-color: white;
+        text-shadow: rgb(10, 10, 10) 5px ;
+        transition: 0.5s ;
+        list-style: none;
+        padding: 5px;
+        /*border: rgb(78, 77, 82) solid;*/
+        transition: 0.5s;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        overflow: hidden;
+    }
+    nav ul li :hover{
+        background-color: rgb(122, 119, 119);
+        color: white;
+    } 
+  
+    .banner{
+        border: 1px black solid;
+        background-image: url(img/tnc_87363625_Full.jpg) ;
+        background-position: center;
+        width: 100%;
+        height: calc(100vh - 100);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    li{
+        float: right;
+
+    }
+    p{
+        font: verdana ;
+        text-size-adjust: 9px;
+        text-decoration-color: #333333;
+
+    }
+    @media only screen and (max-width: 575px){/*moviles*/
+        body{
+            background-color: white;
+        }
+        /*header{
+            height: 300px;
+            width: 100%;
+            background-color: azure;
+        }*/
+    }
+    @media only screen and (max-width: 767px){/*tablet*/
+        body{
+            background-color: rgb(184, 179, 179);
+        }
+        /*header{
+            height: 300px;
+            width: 100%;
+            background-color: azure;
+        }*/
+    }
+    @media only screen and (max-width: 991px){/*escritorio*/
+        body{
+            background-color: rgb(99, 97, 97);
+        }
+        /*header{
+            height: 300px;
+            width: 100%;
+            background-color: azure;
+        }*/
+    }
+
+</style>
+
+<body>
+    <main class="main">
+    <header class="header">
+        <a href= "" class="header_link"><img src="img/logo.jpg" alt="logo de la pag" class="header">The Nature Conservancy</a> 
+    </header>
+            <nav class="navegador">
+                <ul>
+                    <li><a href="QuienesSomos.html">Quienes Somos</a></li>
+                    <li><a href="nuestrosProyectos.html">Nuestos Proyectos</a></li>
+                    <li><a href="formasDeColaborar.html">Formas de Colaborar</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+          <section class="banner"><!--Banner-->
+            <div>
+                <h1>Inicio</h1>
+               
+              </div>
+          </section>
+          
+          <section>
+            <p> 
+                Una organización en la que puedes confiar
+            </p>
+            <p>
+                Como organización benéfica líder en el mundo, ponemos cada dólar donado a trabajar de manera eficiente y eficaz para lograr el mayor impacto posible para la conservación.
+            </p>
+
+          </section>
+          <footer>
+            <p>Taller de Aplicaciones Para Internet</p>
+            <a href=”https://www.nature.org/”>Organizacion de ayuda al medio ambiente</a>
+          </footer>
+          
+          
+        </main>
+</body>
+</html>

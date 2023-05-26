@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo recuperativo</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+   
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .main{
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    
+    header{
+        background-color: white;
+        text-shadow: rgb(10, 10, 10) 5px ;
+        /*border: 1px black solid;*/
+        width: 100%;
+        height: 100px;
+        transition: 0.5s ;
+        padding: 0 30px;
+    }
+
+    .header_link{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        font-size: 50px;
+        color: #333333;
+
+    }
+    .header_img{
+        object-fit: cover;
+        height: 90%;
+        margin-right: 10px;
+       
+
+    }
+    body{
+        width: 100%;
+        background-color: white;
+        align-content: center;
+
+    }
+    nav ul li{
+        width: 70%;
+        height: 20px;
+        background-color: white;
+        text-shadow: rgb(10, 10, 10) 5px ;
+        transition: 0.5s ;
+        list-style: none;
+        padding: 5px;
+        /*border: rgb(78, 77, 82) solid;*/
+        transition: 0.5s;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        overflow: hidden;
+    }
+    nav ul li :hover{
+        background-color: rgb(122, 119, 119);
+        color: white;
+    } 
+  
+    .banner{
+        border: 1px black solid;
+        background-image: url(img/tnc_87363625_Full.jpg) ;
+        background-position: center;
+        width: 100%;
+        height: calc(100vh - 100);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    li{
+        float: right;
+
+    }
+    p{
+        font: verdana ;
+        text-size-adjust: 9px;
+        text-decoration-color: #333333;
+
+    }
+    
+    li{
+        float: right;
+
+    }
+    p{
+       
+        font: verdana ;
+        text-size-adjust: 9px;
+        text-decoration-color: #333333;
+
+    }
+    .formulario{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 15px;
+
+    }
+    .input{
+        width: 100%;
+        height: 35px;
+        margin: 5px 0;
+        outline: none;
+        font-size: 20px;
+       
+    }
+    .textarea{
+        width: 100%;
+        height: 90px;
+        margin: 5px 0;
+        font-size: 20px;
+        resize: none;
+        
+
+    }
+    .boton{
+        width: 50%;
+        height: 35px;
+        margin: 5px 0;
+        font-size: 20px;
+        background-color: rgb(34, 33, 33);
+        color: white;
+
+    }
+    @media only screen and (max-width: 575px){/*moviles*/
+        body{
+            background-color: white;
+        }
+        header{
+            height: 300px;
+            width: 575px;
+            background-color: azure;
+        }
+    }
+    @media only screen and (max-width: 767px){/*tablet*/
+        body{
+            background-color: white;
+        }
+        header{
+            height: 300px;
+            width: 767px;
+            background-color: azure;
+        }
+    }
+    @media only screen and (max-width: 991px){/*escritorio*/
+        body{
+            background-color: white;
+        }
+        header{
+            height: 300px;
+            width: 991px;
+            background-color: azure;
+        }
+    }
+
+</style>
+
+<body>
+    <main class="main">
+        <header class="header">
+            <a href= "" class="header_link"><img src="img/logo.jpg" alt="logo de la pag" class="header">The Nature Conservancy</a> 
+        </header>
+                <nav class="navegador">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="QuienesSomos.html">Quienes Somos</a></li>
+                    <li><a href="nuestrosProyectos.html">Nuestros Proyectos</a></li>
+                    <li><a href="formasDeColaborar.html">Formas de Colaborar</a></li>
+                </ul>
+            </nav>
+            <section class="banner"><!--Banner-->
+                <div>
+                    <h1>Contacto</h1>
+                    
+                  </div>
+              </section>
+              <div id="form">
+                
+                <form class="formulario" action="">
+                    <input class="input" type="text" id="Nombre" name="Nombre" value="Nombre">
+                    <input class="input" type="text" id="Apellido" name="Apellido" value="Apellido">
+                    <input class="input" type="email" id="correo" name="Correo electronico" value="Correo@electronico">
+                    <input class="input" type="text" id="Asunto" name="Asunto" value="Asunto">
+                    <textarea class="textarea" name="Mensaje" id="Mensaje" cols="30" rows="10" value="Mensaje"></textarea>
+                    
+                   </form>
+                   <button onclick ="alerta()">Enviar</button>
+                   <script>
+
+                   function alerta(){
+                    let nombre = document.getElementById('Nombre')
+                    let apellido = document.getElementById('Apellido')
+                    let correo = document.getElementById('correo')
+                    let asunto = document.getElementById('Asunto')
+                    let mensaje = document.getElementById('Mensaje')
+                    let envio = nombre.value +espacio+apellido.value+correo.value+asunto.value+mensaje.value
+                    alert(envio)
+                   }
+                   
+        
+                </script>   
+              </div>
+
+          <footer>
+            <p>Taller de Aplicaciones para Internet</p>
+          </footer>
+        </main>
+    </body>
+    </html>
